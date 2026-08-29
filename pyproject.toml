@@ -1,0 +1,36 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "ai-runtime-observatory"
+version = "1.0.0"
+description = "Real-Time AI Observability & Runtime Diagnostics Platform for Local Gemma SLMs"
+authors = ["Lawrence E. <lawrence@enterprise-ai.internal>"]
+readme = "README.md"
+packages = [{include = "observatory", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.28.0"}
+pydantic = "^2.6.0"
+pydantic-settings = "^2.2.0"
+httpx = "^0.27.0"
+prometheus-client = "^0.20.0"
+opentelemetry-api = "^1.23.0"
+opentelemetry-sdk = "^1.23.0"
+opentelemetry-instrumentation = "^0.44b0"
+aiofiles = "^23.2.1"
+numpy = "^1.26.0"
+python-multipart = "^0.0.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.0"
+pytest-asyncio = "^0.23.5"
+requests = "^2.31.0"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["src", "."]
