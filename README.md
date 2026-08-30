@@ -7,7 +7,7 @@
 [![Ollama](https://img.shields.io/badge/Ollama-Local%20Gemma%20SLM-black?style=flat&logo=ollama&logoColor=white)](https://ollama.ai/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-An enterprise-grade, zero-mock, real-time observability and runtime diagnostics platform designed for on-premise Small Language Models (Gemma SLM) and autonomous multi-agent systems. Built with OpenTelemetry distributed tracing, mathematical evaluation judges, in-memory circular ring buffers, and continuous runtime guardrails.
+An open-source zero-mock, real-time observability and runtime diagnostics platform designed for on-premise Small Language Models (Gemma SLM) and autonomous multi-agent systems. Built with OpenTelemetry distributed tracing, mathematical evaluation judges, in-memory circular ring buffers, and continuous runtime guardrails.
 
 ---
 
